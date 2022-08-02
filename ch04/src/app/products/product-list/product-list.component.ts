@@ -18,7 +18,7 @@ export class ProductListComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit(): void {
     if (this.productDetail) {
-      this.productDetail.name = 'Webcam';
+      console.log(this.productDetail.name);
     }
   }
 
