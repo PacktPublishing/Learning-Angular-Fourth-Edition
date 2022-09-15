@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #616161;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div  {
+  padding: 0 16px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1, h2 {
+  font-weight: lighter;
+}
+
+p {
+  font-size: 14px;
+}
+
+li {
+  cursor: pointer;
+}
+
+.button, button {
+  padding: 8px 16px;
+  border-radius: 2px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover, button:hover {
+  opacity: 0.8;
+  font-weight: normal;
+}
+
+input {
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #BDBDBD;
+}
+
+label {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  display: block;
+}
