@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let product of products | sort">
+    <a [routerLink]="['/products', product.id]">{{product.name}}</a>
+  </li>
+</ul>
+<app-product-create (added)="onAdd($event)"></app-product-create>
