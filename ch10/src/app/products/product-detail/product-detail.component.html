@@ -1,0 +1,13 @@
+<div *ngIf="product$ | async as product">
+  <h2>Product Details</h2>
+  <h3>{{product.name}}</h3>
+  <span>{{product.price | currency:'EUR'}}</span>
+  <form (ngSubmit)="changePrice(product, price!)">
+    <input placeholder="New price" name="price" [(ngModel)]="price" />
+    <button type="submit">Change</button>
+  </form>
+  <p>
+    <button *ngIf="authService.isLoggedIn" (click)="buy(product)">Buy Now</button>
+    <button class="delete" (click)="remove(product)">Delete</button>
+  </p>
+</div>

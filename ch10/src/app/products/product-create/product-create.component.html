@@ -1,0 +1,25 @@
+<form [formGroup]="productForm" (ngSubmit)="createProduct()">
+  <div>
+    <label for="name">Name</label>
+    <input id="name" formControlName="name" required />
+    <span *ngIf="name.touched && name.invalid">
+      The name is not valid
+    </span>
+  </div>
+  <div>
+    <label for="price">Price</label>
+    <input id="price" formControlName="price" required />
+    <span *ngIf="price.touched && price.hasError('required')">
+      The price is required
+    </span>
+    <span *ngIf="price.touched && price.hasError('outOfRange')">
+      The price is out of range
+    </span>
+    <span *ngIf="showPriceRangeHint">
+      Price should be between 1 and 10000
+    </span>
+  </div>
+  <div>
+    <button type="submit" [disabled]="!productForm.valid">Create</button>
+  </div>
+</form>
