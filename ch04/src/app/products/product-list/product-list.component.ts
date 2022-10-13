@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, ViewChild } from '@angular/core';
 import { ProductDetailComponent } from '../product-detail/product-detail.component';
 
 @Component({
@@ -6,15 +6,10 @@ import { ProductDetailComponent } from '../product-detail/product-detail.compone
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent implements OnInit, AfterViewInit {
+export class ProductListComponent implements AfterViewInit {
 
   selectedProduct = '';
   @ViewChild(ProductDetailComponent) productDetail: ProductDetailComponent | undefined;
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
 
   ngAfterViewInit(): void {
     if (this.productDetail) {

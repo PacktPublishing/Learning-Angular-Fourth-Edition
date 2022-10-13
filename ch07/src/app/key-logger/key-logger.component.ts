@@ -12,8 +12,6 @@ export class KeyLoggerComponent implements OnInit {
   @ViewChild('keyContainer', { static: true }) input: ElementRef | undefined;
   keys = '';
 
-  constructor() { }
-
   ngOnInit(): void {
     const logger$ = fromEvent<KeyboardEvent>(this.input?.nativeElement, 'keyup');
     logger$.pipe(

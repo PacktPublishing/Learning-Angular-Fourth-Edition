@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Product } from '../product';
 import { ProductsService } from '../products.service';
 
@@ -7,14 +7,11 @@ import { ProductsService } from '../products.service';
   templateUrl: './product-create.component.html',
   styleUrls: ['./product-create.component.css']
 })
-export class ProductCreateComponent implements OnInit {
+export class ProductCreateComponent {
 
   @Output() added = new EventEmitter<Product>();
 
   constructor(private productsService: ProductsService) {}
-
-  ngOnInit(): void {
-  }
 
   createProduct(name: string, price: number) {
     this.productsService.addProduct(name, price).subscribe(product => {
