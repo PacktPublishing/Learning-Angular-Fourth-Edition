@@ -1,0 +1,7 @@
+form  {
+  padding: 0 16px;
+}
+
+mat-form-field {
+  width: 350px;
+}

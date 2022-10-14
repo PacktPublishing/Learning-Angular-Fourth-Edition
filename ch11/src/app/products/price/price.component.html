@@ -1,0 +1,10 @@
+<h1 mat-dialog-title>Change product price</h1>
+<mat-dialog-content>
+  <mat-form-field>
+    <input matInput [(ngModel)]="price" [placeholder]="data.toString()" />
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-raised-button color="primary" [mat-dialog-close]="price">Save</button>
+  <button mat-button mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

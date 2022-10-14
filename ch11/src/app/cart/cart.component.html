@@ -1,0 +1,9 @@
+<h2>My Cart</h2>
+<div [formGroup]="cartForm">
+  <div
+    formArrayName="products"
+    *ngFor="let product of cartForm.controls.products.controls; let i=index">
+      <label>{{cart[i].name}}</label>
+      <input type="number" [formControlName]="i" />
+  </div>
+</div>

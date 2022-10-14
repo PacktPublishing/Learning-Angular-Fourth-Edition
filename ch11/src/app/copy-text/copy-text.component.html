@@ -1,0 +1,7 @@
+<mat-form-field>
+  <textarea matInput [(ngModel)]="content" placeholder="Enter some text and click the Copy button"></textarea>
+</mat-form-field>
+<button mat-flat-button [cdkCopyToClipboard]="content">
+  <mat-icon>content_copy</mat-icon>
+  Copy
+</button>

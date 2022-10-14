@@ -1,0 +1,17 @@
+<mat-list cdkDropList (cdkDropListDropped)="reorder($event)">
+  <mat-list-item cdkDrag *ngFor="let product of products">
+    {{product.name}}
+  </mat-list-item>
+</mat-list>
+
+<mat-selection-list>
+  <mat-list-option *ngFor="let product of products">
+    {{product.name}}
+  </mat-list-option>
+</mat-selection-list>
+
+<mat-grid-list cols="3" rowHeight="100px" gutterSize="50">
+  <mat-grid-tile *ngFor="let product of products">
+    {{product.name}}
+  </mat-grid-tile>
+</mat-grid-list>

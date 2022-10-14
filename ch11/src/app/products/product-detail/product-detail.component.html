@@ -1,0 +1,10 @@
+<div *ngIf="product$ | async as product">
+  <h2>Product Details</h2>
+  <h3>{{product.name}}</h3>
+  <span>{{product.price | currency:'EUR'}}</span>
+  <button mat-raised-button color="primary" (click)="changePrice(product)">Change</button>
+  <p>
+    <button mat-button *ngIf="authService.isLoggedIn" (click)="buy(product)">Buy Now</button>
+    <button mat-raised-button color="primary" class="delete" (click)="remove(product)">Delete</button>
+  </p>
+</div>
