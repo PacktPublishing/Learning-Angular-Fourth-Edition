@@ -1,0 +1,11 @@
+<div>
+  <label for="name">Name</label>
+  <input id="name" #name />
+</div>
+<div>
+  <label for="price">Price</label>
+  <input id="price" #price />
+</div>
+<div>
+  <button (click)="createProduct(name.value, price.valueAsNumber)">Create</button>
+</div>
