@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthGuard } from './auth/auth.guard';
+import { authGuard } from './auth/auth.guard';
 import { CartComponent } from './cart/cart.component';
-import { CheckoutGuard } from './checkout.guard';
+import { checkoutGuard } from './checkout.guard';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
     path: 'cart',
     component: CartComponent,
-    canActivate: [AuthGuard],
-    canDeactivate: [CheckoutGuard]
+    canActivate: [authGuard],
+    canDeactivate: [checkoutGuard]
   },
   {
     path: 'about',
