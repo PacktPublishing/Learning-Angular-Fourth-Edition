@@ -19,7 +19,7 @@ export class AppErrorHandler implements ErrorHandler {
           console.error('Request error:', error.error);
           break;
         default:
-          console.error('Uknown error:', error.error);
+          console.error('Unknown error:', error.error);
       }
     } else {
       console.error('Application error:', err)
