@@ -50,6 +50,9 @@ With the following software and hardware list you can run all code files present
 - You will need a version of Angular 15 installed on your computer, preferably the latest one. All code examples have been tested using Angular 15.0.0 on Windows, but they should work with any future release of Angular 15 as well.
 - If you are using the digital version of this book, we advise you to type the code yourself or access the code via the GitHub repository. Doing so will help you avoid any potential errors related to the copying and pasting of code.
 
+### Upgrade to Angular 16 ###
+Need to run all code samples of the book in Angular 16? Check out the [Upgrading to Angular 16](v16.md) guide to learn how!
+
 ## Know more on the Discord server <img alt="Coding" height="25" width="32"  src="https://cliply.co/wp-content/uploads/2021/08/372108630_DISCORD_LOGO_400.gif">
 
 You can get more engaged on the discord server for more latest updates and discussions in the community at [https://packt.link/LearningAngular4e](https://packt.link/LearningAngular4e) 
