@@ -1,6 +1,7 @@
 <h2>Product Details</h2>
-<h3>{{name}}</h3>
-<div [ngSwitch]="name">
+<h3>{{ product?.name }}</h3>
+<span>{{ product?.price | currency: 'USD' }}</span>
+<div [ngSwitch]="product?.name">
   <p *ngSwitchCase="'Webcam'">
     Product is used for video
   </p>
