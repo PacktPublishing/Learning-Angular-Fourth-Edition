@@ -7,6 +7,7 @@ import { ProductDetailComponent } from '../product-detail/product-detail.compone
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements AfterViewInit {
+  products = [ 'Webcam', 'Microphone', 'Wireless keyboard' ];
 
   selectedProduct = '';
   @ViewChild(ProductDetailComponent) productDetail: ProductDetailComponent | undefined;
