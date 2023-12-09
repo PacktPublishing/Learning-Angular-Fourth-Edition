@@ -47,3 +47,11 @@ li {
   padding: 10px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+.valid{
+  border-bottom: solid green;
+}
+
+.invalid{
+  border-bottom: solid red;
+}
